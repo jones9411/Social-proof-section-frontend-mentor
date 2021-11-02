@@ -1,0 +1,120 @@
+@use "variables" as *;
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: $LightGrayishMagenta;
+  width: 75%;
+  height: 20%;
+  border-radius: 0.75rem;
+  margin: 0.9375rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      margin: 0 5px;
+    }
+  }
+
+  p {
+    color: $VeryDarkMagenta;
+    font-weight: 700;
+    margin-left: 95px;
+  }
+
+  &-left {
+    align-items: center;
+    align-self: flex-start;
+    justify-content: center;
+  }
+
+  &-center {
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+  }
+
+  &-right {
+    align-items: center;
+    align-self: flex-end;
+    justify-content: center;
+  }
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .review-card {
+    margin: 0 25px;
+    height: 234px;
+    width: 350px;
+    border-radius: 0.75rem;
+    background-color: $VeryDarkMagenta;
+    color: $LightGrayishMagenta;
+
+    .buyer {
+      display: flex;
+      padding: 0.9375rem;
+
+      img {
+        border-radius: 50%;
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 1.0625rem 0.1875rem 1.0625rem 1.0625rem;
+      }
+
+      .buyer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .verified-buyer {
+          font-size: 0.8125rem;
+          font-weight: 400;
+          color: $SoftPink;
+        }
+        .name {
+          font-weight: 700;
+          font-size: 0.8125rem;
+        }
+        p {
+          line-height: 1.5rem;
+        }
+      }
+    }
+
+    .review {
+      padding: 0 2.125rem;
+
+      p {
+        font-size: 0.8125rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+      }
+    }
+
+    // aligning the divs position
+    &-left {
+      align-items: center;
+      align-self: flex-start;
+      justify-content: center;
+    }
+
+    &-center {
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+    }
+
+    &-right {
+      align-items: center;
+      align-self: flex-end;
+      justify-content: center;
+    }
+  }
+}
